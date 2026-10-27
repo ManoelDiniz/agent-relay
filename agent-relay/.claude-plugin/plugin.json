@@ -1,0 +1,24 @@
+{
+  "name": "agent-relay",
+  "version": "1.0.0",
+  "description": "Protocolo de comunicação entre agentes Claude Code que trabalham no mesmo repositório ao mesmo tempo. Canal de arquivos com caixa de entrada por agente, monitor que acorda o agente quando chega mensagem, território declarado para não sobrescreverem o trabalho um do outro, e as regras que evitam os erros clássicos de coordenação: quebrar o contrato do outro sem avisar, renomear em paralelo, e afirmar o que não foi testado.",
+  "author": {
+    "name": "ManoelDiniz"
+  },
+  "license": "MIT",
+  "keywords": [
+    "multi-agent",
+    "coordenacao",
+    "protocolo",
+    "handoff",
+    "relay",
+    "paralelo"
+  ],
+  "skills": "./skills/",
+  "commands": [
+    "./commands/relay-init.md",
+    "./commands/relay-check.md",
+    "./commands/relay-send.md",
+    "./commands/relay-watch.md"
+  ]
+}

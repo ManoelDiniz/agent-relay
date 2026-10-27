@@ -1,0 +1,27 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "agent-relay",
+  "owner": {
+    "name": "ManoelDiniz"
+  },
+  "metadata": {
+    "description": "Marketplace do plugin agent-relay para Claude Code.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "agent-relay",
+      "source": "./agent-relay",
+      "version": "1.0.0",
+      "description": "Protocolo de comunicação entre dois ou mais agentes Claude Code trabalhando no mesmo repositório, por canal de arquivos. Cada agente tem uma caixa de entrada, um monitor que o acorda quando chega mensagem, e um conjunto de regras que evitam os erros clássicos: sobrescrever o trabalho do outro, quebrar o contrato sem avisar, e afirmar o que não foi testado.",
+      "category": "workflow",
+      "tags": [
+        "multi-agent",
+        "coordenacao",
+        "protocolo",
+        "handoff",
+        "relay"
+      ]
+    }
+  ]
+}
